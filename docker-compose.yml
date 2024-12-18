@@ -17,7 +17,7 @@ services:
   # Backend Service
   backend:
     build:
-      context: ./backend
+      context: ./todo_backend
       dockerfile: Dockerfile
     container_name: backend
     restart: always
@@ -34,7 +34,7 @@ services:
   # Frontend Service
   frontend:
     build:
-      context: ./frontend
+      context: ./todo_frontend
       dockerfile: Dockerfile
     container_name: frontend
     restart: always
